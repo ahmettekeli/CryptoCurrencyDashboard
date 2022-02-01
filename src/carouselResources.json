@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Carousel title 1",
+      "description": "Description for carousel 1",
+      "image": "https://random.imagecdn.app/500/150",
+      "contentPosition": "center"
+    },
+    {
+      "id": 2,
+      "title": "Carousel title 2",
+      "description": "Description for carousel 2",
+      "image": "https://random.imagecdn.app/500/150",
+      "contentPosition": "left"
+    },
+    {
+      "id": 3,
+      "title": "Carousel title 3",
+      "description": "Description for carousel 3",
+      "image": "https://random.imagecdn.app/500/150",
+      "contentPosition": "right"
+    }
+  ]
+}

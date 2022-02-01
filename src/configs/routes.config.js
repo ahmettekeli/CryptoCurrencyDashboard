@@ -1,0 +1,15 @@
+export const routes = {
+  home: "/",
+  notFound: "/404",
+  support: "/support",
+  help: "/help",
+  login: "/login",
+  market: "/market",
+  trade: "/trade",
+  youtube: "/youtube",
+  twitter: "/twitter",
+  facebook: "/facebook",
+  instagram: "/instagram",
+  blog: "/blog",
+  linkedin: "/linkedin",
+};
