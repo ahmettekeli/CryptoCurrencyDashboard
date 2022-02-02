@@ -7,7 +7,7 @@ function CurrencyFooter() {
   const { theme } = useGlobalState();
   return (
     <StyledLink to={routes.trade}>
-      <Wrapper theme={theme}>
+      <Wrapper theme={theme} data-testid="currency-footer">
         PIYASADAKI TUM KRIPTO PARA BIRIMLERINI KESFEDIN <ArrowRightAltIcon />
       </Wrapper>
     </StyledLink>

@@ -36,7 +36,7 @@ function SelectBox() {
   }, [selectedCurrency]);
 
   return (
-    <Wrapper>
+    <Wrapper data-testid="select-box">
       <Select value={currency} onChange={onChange}>
         {generateOptions(currencies)}
       </Select>

@@ -4,22 +4,57 @@
       "id": 1,
       "title": "Carousel title 1",
       "description": "Description for carousel 1",
-      "image": "https://random.imagecdn.app/500/150",
+      "image": "https://i.ibb.co/dtjKtML/slide1.jpg",
       "contentPosition": "center"
     },
     {
       "id": 2,
       "title": "Carousel title 2",
       "description": "Description for carousel 2",
-      "image": "https://random.imagecdn.app/500/150",
+      "image": "https://i.ibb.co/Mgkjmbw/slide2.png",
       "contentPosition": "left"
     },
     {
       "id": 3,
       "title": "Carousel title 3",
       "description": "Description for carousel 3",
-      "image": "https://random.imagecdn.app/500/150",
+      "image": "https://i.ibb.co/ysCBLG4/slide3.jpg",
       "contentPosition": "right"
+    },
+    {
+      "id": 4,
+      "title": "Carousel title 4",
+      "description": "Description for carousel 4",
+      "image": "https://i.ibb.co/MshSZHK/slide4.jpg",
+      "contentPosition": "left"
+    },
+    {
+      "id": 5,
+      "title": "Carousel title 5",
+      "description": "Description for carousel 5",
+      "image": "https://i.ibb.co/t3kD2tt/slide5.jpg",
+      "contentPosition": "left"
+    },
+    {
+      "id": 6,
+      "title": "Carousel title 6",
+      "description": "Description for carousel 6",
+      "image": "https://i.ibb.co/9YfZZLQ/slide6.jpg",
+      "contentPosition": "left"
+    },
+    {
+      "id": 7,
+      "title": "Carousel title 7",
+      "description": "Description for carousel 7",
+      "image": "https://i.ibb.co/kJzD3r3/slide7.jpg",
+      "contentPosition": "left"
+    },
+    {
+      "id": 8,
+      "title": "Carousel title 8",
+      "description": "Description for carousel 8",
+      "image": "https://i.ibb.co/zNR4dyC/slide8.jpg",
+      "contentPosition": "left"
     }
   ]
 }

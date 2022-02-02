@@ -13,7 +13,7 @@ import {
 function Header() {
   const { theme } = useGlobalState();
   return (
-    <Wrapper theme={theme}>
+    <Wrapper theme={theme} data-testid="header">
       <Logo>
         <StyledLink to={routes.home}>
           <img src={urls.logo} alt="logo" />
@@ -23,7 +23,7 @@ function Header() {
         <StyledLink to={routes.market}>
           <NavItem>Piyasalar</NavItem>
         </StyledLink>
-        <StyledLink to={routes.trade}>
+        <StyledLink to={`${routes.trade}/bitcoin`}>
           <NavItem>Kolay Al/Sat</NavItem>
         </StyledLink>
         <NavItem>

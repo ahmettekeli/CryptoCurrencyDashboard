@@ -36,7 +36,7 @@ function Footer() {
   };
 
   return (
-    <Wrapper theme={theme}>
+    <Wrapper theme={theme} data-testid="footer">
       <ContainerLeft>
         <Content>
           <LogoContainer>

@@ -11,7 +11,7 @@ import {
 function SelectItem({ image, name, symbol, price, change }) {
   const { theme } = useGlobalState();
   return (
-    <Wrapper theme={theme}>
+    <Wrapper theme={theme} data-testid="select-item">
       <ItemProfile>
         <ItemLogo src={image} alt={name} />
         <div>{name}</div>

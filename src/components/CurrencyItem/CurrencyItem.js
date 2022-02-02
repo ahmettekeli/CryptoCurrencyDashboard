@@ -32,7 +32,7 @@ function CurrencyItem({
   }
 
   return (
-    <Wrapper theme={theme} onClick={onClick}>
+    <Wrapper theme={theme} onClick={onClick} data-testid="currency-item">
       <StyledTd>
         <CurrencyProfile>
           <img src={image} height="25" width="25" alt={name} />

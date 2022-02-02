@@ -14,5 +14,5 @@ export const BackgroundDiv = styled.div`
   width: 100vw;
   height: 50vh;
   background-size: cover;
-  background-image: url("https://random.imagecdn.app/500/150");
+  background-image: url(${(props) => props.image});
 `;

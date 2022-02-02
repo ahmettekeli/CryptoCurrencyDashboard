@@ -27,7 +27,7 @@ function LineChart({ data, size, width, height }) {
   const lineColor =
     theme === themeEnum.DARK ? colors.chartDarkTheme : colors.chartLightTheme;
   return (
-    <Wrapper size={size}>
+    <Wrapper size={size} data-testid="line-chart">
       <Line
         data={{
           labels: data,

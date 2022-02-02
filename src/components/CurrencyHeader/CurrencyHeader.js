@@ -49,7 +49,7 @@ function CurrencyHeader() {
   }
 
   return (
-    <Wrapper theme={theme}>
+    <Wrapper theme={theme} data-testid="currency-header">
       <tr>
         <th></th>
         <RightTh onClick={togglePrice}>

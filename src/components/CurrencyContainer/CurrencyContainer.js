@@ -26,7 +26,7 @@ function CurrencyContainer() {
   }
 
   return (
-    <Wrapper>
+    <Wrapper data-testid="currency-container">
       <table>
         <CurrencyHeader />
         <tbody>{generateCurrencyItems(currencies)}</tbody>
