@@ -20,9 +20,9 @@ function App() {
             <Content>
               <Routes>
                 <Route path={routes.home} element={<Home />} />
-                <Route path={routes.trade} element={<Detail />} />
+                <Route path={routes.tradeCurrency} element={<Detail />} />
                 <Route path={routes.notFound} element={<NotFound404 />} />
-                <Route path="*" element={<NotFound404 />} />
+                <Route element={<NotFound404 />} />
               </Routes>
             </Content>
             <Footer />

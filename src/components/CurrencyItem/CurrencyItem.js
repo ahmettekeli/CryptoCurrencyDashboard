@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useGlobalState } from "context/Store";
 import LineChart from "components/LineChart/LineChart";
-import { nFormatter } from "utility";
+import { findCurrency, nFormatter } from "utility";
 import { routes } from "configs";
 import {
   BuyButton,
@@ -24,11 +24,11 @@ function CurrencyItem({
   chartData,
 }) {
   const navigate = useNavigate();
-  const { theme, setSelectedCurrency } = useGlobalState();
+  const { currencies, theme, setSelectedCurrency } = useGlobalState();
 
   function onClick() {
-    setSelectedCurrency(id);
-    navigate(routes.trade);
+    setSelectedCurrency(findCurrency(currencies, id));
+    navigate(`${routes.trade}/${id}`);
   }
 
   return (

@@ -13,6 +13,12 @@ const setCurrencies = (state, action) => {
     currencies: action.payload.currencies,
   };
 };
+const setTrueSourceCurrencies = (state, action) => {
+  return {
+    ...state,
+    currencies: action.payload.currencies,
+  };
+};
 
 const setSelectedCurrency = (state, action) => {
   return {
@@ -24,6 +30,7 @@ const setSelectedCurrency = (state, action) => {
 const handlers = {
   [actionTypes.SET_THEME]: setTheme,
   [actionTypes.SET_CURRENCIES]: setCurrencies,
+  [actionTypes.SET_TRUE_SOURCE_CURRENCIES]: setTrueSourceCurrencies,
   [actionTypes.SET_SELECTED_CURRENCY]: setSelectedCurrency,
 };
 

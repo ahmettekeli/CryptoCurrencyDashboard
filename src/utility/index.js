@@ -28,3 +28,17 @@ export function getPageTitle(price) {
     price
   )} - TL - Bitcoin) Yarının dünyasi bu. Paribu`;
 }
+
+export function getCurrenciesSortedBy(currencies, col, isAscending = true) {
+  let sorted;
+  if (isAscending) {
+    sorted = [...currencies].sort((a, b) => (a[col] > b[col] ? 1 : -1));
+  } else {
+    sorted = [...currencies].sort((a, b) => (a[col] < b[col] ? 1 : -1));
+  }
+  return sorted;
+}
+
+export function findCurrency(currencies, id) {
+  return currencies.find((currency) => currency.id === id);
+}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { MenuItem, Select } from "@material-ui/core";
 import SelectItem from "components/SelectItem/SelectItem";
 import { useGlobalState } from "context/Store";
+import { findCurrency } from "utility";
 import { Wrapper } from "./SelectBox.styles";
 
 function generateOptions(currencies) {
@@ -25,13 +26,9 @@ function SelectBox() {
     useGlobalState();
   const [currency, setCurrency] = useState("bitcoin");
 
-  function findCurrency(id) {
-    return currencies.find((currency) => currency.id === id);
-  }
-
   function onChange(e) {
     setCurrency(e.target.value);
-    setSelectedCurrency(findCurrency(e.target.value));
+    setSelectedCurrency(findCurrency(currencies, e.target.value));
   }
 
   useEffect(() => {

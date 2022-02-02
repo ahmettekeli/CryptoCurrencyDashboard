@@ -6,6 +6,7 @@ export const routes = {
   login: "/login",
   market: "/market",
   trade: "/trade",
+  tradeCurrency: "/trade/:id",
   youtube: "/youtube",
   twitter: "/twitter",
   facebook: "/facebook",

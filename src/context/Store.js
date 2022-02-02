@@ -12,6 +12,7 @@ export const themeEnum = Object.freeze({
 const initialState = {
   theme: themeEnum.LIGHT,
   currencies: [],
+  trueSourceCurrencies: [],
   selectedCurrency: "",
 };
 
@@ -44,9 +45,17 @@ function Provider({ children }) {
     });
   };
 
+  const setTrueSourceCurrencies = (currency) => {
+    dispatch({
+      type: actionTypes.SET_SELECTED_CURRENCY,
+      payload: { currency },
+    });
+  };
+
   useEffect(() => {
     if (!isError && !isLoading && data) {
       setCurrencies(data);
+      setTrueSourceCurrencies(data);
       setSelectedCurrency(data[0]);
       document.title = getPageTitle(data[0].current_price);
     } else {
